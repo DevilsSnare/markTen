@@ -1,38 +1,114 @@
+:root {
+  --main-color: red;
+}
 .App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 600px;
+  margin: auto;
+}
+.brand {
+  display: block;
+  margin: auto;
+  padding-top: 2rem;
   text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--main-color);
+  text-shadow: black 1px 1px 1px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  height: 1.5px;
+  background-color: red;
+  border: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-detail {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-div {
+  max-width: 600px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 1rem;
+}
+.name-bill {
+  margin: auto;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+.bill-amount {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+}
+.name-cash {
+  margin: auto;
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+.cash-amount {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 1.8rem;
+}
+.find-change {
+  margin: auto;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.3rem;
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--main-color);
+}
+.find-change:hover {
+  background-color: var(--main-color);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.alert-message {
+  margin: auto;
+  padding: 1.5rem 0rem;
+  font-size: 1.3rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+  margin: auto;
+  padding: 0.5rem 0.5rem;
+  border: 2px solid var(--main-color);
+  border-collapse: collapse;
+  font-size: 1.3rem;
+  text-align: left;
+}
+.th-head {
+  background-color: var(--main-color);
+  color: white;
+  margin: auto;
+  padding: 0.2rem 0.2rem;
+  border: 2px solid var(--main-color);
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: normal;
+}
+th {
+  margin: auto;
+  padding: 0.2rem 0.2rem;
+  border: 2px solid var(--main-color);
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: normal;
+}
+td {
+  margin: auto;
+  padding: 0.2rem 0.2rem;
+  border: 2px solid var(--main-color);
+  font-size: 1.3rem;
+  text-align: center;
 }
